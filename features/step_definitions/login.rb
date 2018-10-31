@@ -11,6 +11,6 @@ Dado("Que estou na página do Pagseguro") do
     click_button("entrar")
   end
   
-  Então("Estou logado no Pagseguro") do
-    pending # Write code here that turns the phrase above into concrete actions
+  Então("Verifico se estou logado no Pagseguro") do
+    find(:xpath, "//*[@id='ps']/body/main/section/div/div[1]/div[1]/div/h3")
   end
